@@ -5,7 +5,7 @@ def reverse(lst):
     return ([lst.pop()]+ reverse(lst))
 print(reverse([2,4,5,6,8]))
 """
-OLAYANJU
+
 """
 def append(data):
     new_node=node(data)
