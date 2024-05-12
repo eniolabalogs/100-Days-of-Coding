@@ -27,23 +27,23 @@ class linked_list:
     def append(self,data):
         new_node=node(data)
         cur=self.head
-        while cur.next!=None:
+        while cur.next:
             cur=cur.next
         cur.next=new_node
     def length(self):
         cur=self.head
         total=0
-        while cur.next!=None:
+        while cur.next:
             total+= 1
             cur=cur.next
         return total
     def display(self):
         elems=[]
         cur_node=self.head
-        while cur_node!=None:
+        while cur_node:
             elems.append(cur_node.data)
             cur_node=cur_node.next
-             ZX.AERSDPprint (elems)
+            print (elems)
 
 my_list= linked_list()
 my_list.display()
@@ -51,5 +51,3 @@ my_list.append(1)
 my_list.append(2)
 my_list.display()
     
-
-         
